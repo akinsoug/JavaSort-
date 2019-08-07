@@ -6,7 +6,7 @@ public class Sort1 {
 		 * 
 		 */try {
 				myMultiplication();//===========
-				
+				myDivide(5, 0);//===========
 				
 			}
 			catch(ArithmeticException e){			
@@ -30,20 +30,21 @@ public class Sort1 {
 	     {
 			for(int j = 1; j< 13; j++)
 		     {//break and continue do the same thing sometime depend on how they are used
-				if(i == 3) {
-//					continue;//means skip the 3 * j for the entire 12 inner loop
-					break;//this means stop but in this case is doing the same thing as continue because of the nested loops
-//					continue first;//same thing still
-//					break first;// this break outer loop therefore the inner loop also 
-//					return;
+				if(i == 3) { 
+					break;//this means stop  
 				}
                System.out.printf("%d * %d = %d \n",i, j, i*j);  
 		         
 		     }
-           System.out.println("\n");  
-//           System.out.println("\n the address i is     " + $i);  
-			
+           System.out.println("\n");
 	     }
 	}//END of myMultiplication
+	/*
+	 * 2
+	 */
+	public static double myDivide(int a, int b) {
+		double result = a/b;
+		return result;
+	}
 
-}
+}//END of class
